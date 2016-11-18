@@ -38,8 +38,8 @@ class AlhamaBudgetLoader(SimpleBudgetLoader):
         is_actual = (filename.find('/ejecucion_')!=-1)
         if is_expense:
             # We got 3- or 4- digit functional codes as input, so add a trailing zero
-            fc_code = line[1].ljust(4, '0')
-            ec_code = line[2]
+            fc_code = line[0].ljust(4, '0')
+            ec_code = line[1]
 
             # For years before 2015 we check whether we need to amend the programme code
             year = re.search('municipio/(\d+)/', filename).group(1)
@@ -56,7 +56,7 @@ class AlhamaBudgetLoader(SimpleBudgetLoader):
                 'ic_code': '000',
                 'item_number': ec_code[-2:],    # Last two digits
                 'description': line[3],
-                'amount': self._parse_amount(line[5 if is_actual else 2])
+                'amount': self._parse_amount(line[5 if is_actual else 3])
             }
 
         else:
