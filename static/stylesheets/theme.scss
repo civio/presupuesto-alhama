@@ -1,5 +1,23 @@
-.navbar-brand{
-  font-size: 2.5em;
+// Import Nexa Font
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/nexa_light-webfont.woff2') format('woff2'),
+       url('../fonts/nexa_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Nexa", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.main-entity-logo {
+  margin: 2*$grid-gutter-width/3 auto $grid-gutter-width;
+}
+
+.navbar-brand,
+.page-title{
+  font-size: 2.25em;
 }
 
 .navbar-default .navbar-nav{
@@ -27,17 +45,6 @@
       }
     }
   }
-
-  @media (min-width: $grid-float-breakpoint) {
-
-    > li{
-      width: 95% / $dvmi-menu-length;
-
-      &.page-home{
-        width: 5%;
-      }
-    }
-  }
 }
 
 .nav-tabs > li > a{
@@ -45,8 +52,24 @@
 
   > h3{
     color: $brand-primary;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    font-family: $font-family-sans-serif;
     font-weight: $font-weight-400;
+  }
+}
+
+.data-sources .data-sources-title{
+  color: $text-color;
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-600;
+}
+
+.main-footer{
+  color: white;
+  background: $brand-primary;
+
+  .footer-menu li a{
+    color: white;
   }
 }
 
@@ -58,14 +81,14 @@
     color: $brand-primary;
 
     &:hover{
-      color: $brand-terciary;
+      color: $text-color;
     }
   }
 }
 
 .home-content .options .option > div .icon,
 .budget-intro .budget-step h3 span{
-  color: mix( #F4A901, white, 75% );
+  color: $brand-terciary;
 }
 
 .policies-chart{
@@ -108,7 +131,17 @@
 }
 
 @media (min-width: $screen-sm-min) {
+  .navbar-brand{
+    margin-top: 0;
+  }
+
   .tax-receipt-content .form-user-incomings .form-group.form-group-half-width{
     width: 25%;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+  .navbar-brand{
+    text-align: right;
   }
 }

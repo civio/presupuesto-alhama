@@ -10,13 +10,13 @@ $gray-light:            lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:          lighten($gray-base, 93.5%) !default; // #eee
 $gray-lightest:         lighten($gray-base, 96%) !default;
 
-$brand-primary:         #015AA9;
-$brand-secondary:       mix( $brand-primary, white, 15% );
-$brand-terciary:        $brand-primary;
+$brand-primary:         #0033a0;
+$brand-secondary:       mix( #0073cd, white, 20% );
+$brand-terciary:        #f5aa00;
 
 $brand-primary-accent:  $brand-terciary;
 
-$text-color:            #444;
+$text-color:            #333;
 $table-color:           $brand-primary;
 
 $headings-color:        $brand-primary;
@@ -48,7 +48,7 @@ $font-weight-400:         400;
 $font-weight-600:         600; 
 $font-weight-700:         700;
 
-$headings-font-weight:    $font-weight-300;
+$headings-font-weight:    $font-weight-400;
 
 
 // Container sizes
@@ -65,8 +65,8 @@ $container-large-desktop:    (1080px + $grid-gutter-width);
 // Main Entity Logo
 // -------------
 
-$main-entity-logo-width:   220px;
-$main-entity-logo-height:  80px;
+$main-entity-logo-width:   263px;
+$main-entity-logo-height:  76px;
 
 
 // Navbar
@@ -77,7 +77,7 @@ $navbar-border-radius: 0;
 // Point at which the navbar becomes uncollapsed
 // $grid-float-breakpoint: 992px;  // $screen-md
 
-$dvmi-menu-length: 5;  // Number of items in main menu
+$dvmi-menu-length: 3;  // Number of items in main menu
 
 // Navbar background color
 $navbar-default-bg:       $brand-primary;
