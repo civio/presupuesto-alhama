@@ -79,6 +79,10 @@ LANGUAGES = (
   ('es', 'Castellano'),
 )
 
+# Facebook Aplication ID used in social_sharing temaplate. Default: ''
+# In order to get the ID create an app in https://developers.facebook.com/
+FACEBOOK_ID             = '1189080564513202'
+
 # Setup Data Source Budget link
 DATA_SOURCE_BUDGET      = 'http://www.alhamademurcia.es/presupuestos.asp'
 
