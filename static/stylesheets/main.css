@@ -6004,10 +6004,10 @@ label {
   opacity: .5; }
 .sankey .link-execution.with-data {
   fill: none;
-  stroke: #4d70bd;
+  stroke: #7a9dd3;
   stroke-opacity: .5; }
 .sankey .legend-execution circle {
-  fill: #4d70bd;
+  fill: #7a9dd3;
   opacity: .5; }
 .sankey .link.no-data,
 .sankey .link-execution.no-data {
@@ -6041,7 +6041,7 @@ label {
 .sankey .popover-content .budgeted {
   color: #b3b3b3; }
 .sankey .popover-content .executed {
-  color: #4d70bd;
+  color: #7a9dd3;
   margin-top: 10px; }
 
 .budget-summary {
@@ -6218,7 +6218,8 @@ label {
       .stacked-area-chart-legend .label.inactive span {
         background: none !important; }
 
-.chart-embed-btn span {
+.chart-embed-btn span,
+.chart-embed-btn a {
   display: block;
   position: absolute;
   top: -5px;
@@ -6227,7 +6228,8 @@ label {
   height: 30px;
   background: url(../assets/icon-share.png) no-repeat center center #0033a0;
   cursor: pointer; }
-  .chart-embed-btn span:hover {
+  .chart-embed-btn span:hover,
+  .chart-embed-btn a:hover {
     background-color: #003bba; }
 
 .policy-breakdown .chart-container .popover-content-year {
@@ -6286,7 +6288,7 @@ label {
       height: 6px;
       margin-top: -2px;
       border-radius: 0;
-      background: #6685c6;
+      background: #cce3f5;
       filter: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
@@ -6298,7 +6300,7 @@ label {
       height: 12px;
       margin-left: -6px;
       margin-top: -3px;
-      background: #6685c6;
+      background: #cce3f5;
       opacity: 1;
       filter: none;
       -webkit-box-shadow: none;

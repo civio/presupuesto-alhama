@@ -176,7 +176,7 @@ $budget-stream-color: $brand-primary;
 // Year Slider
 // --------------
 
-$slider-bg:     mix( $brand-primary, white, 60% );  //mix( $gray-light, $gray-lighter, 50% );
+$slider-bg:     $brand-secondary;
 $slider-color:  $brand-primary;
 
 
@@ -196,4 +196,4 @@ $data-sources-color: $brand-primary;
 // --------------
 
 $sankey-budget-color:     mix( $gray-light, $gray-lighter, 50% );
-$sankey-execution-color:  mix( $brand-primary, white, 70% );
+$sankey-execution-color:  mix( $brand-primary, $brand-secondary, 40% );
