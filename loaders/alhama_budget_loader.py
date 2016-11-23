@@ -15,19 +15,16 @@ class AlhamaBudgetLoader(SimpleBudgetLoader):
         programme_mapping = {
             # old programme: new programme
             '1340': '1350',     # Protección Civil
-            '1350': '1360',     # Extinción de incendios
+            '1350': '1600',     # Extinción de incendios
             '1550': '1532',     # Vías públicas
-            '1620': '1621',     # Recogida de residuos
-            '3130': '3110',     # Protección de la salud
-            '3210': '3219',     # Educación preescolar y primaria
-            '3220': '3229',     # Enseñanza secundaria
-            '3230': '3239',     # Promoción educativa
-            '3240': '3260',     # Servicios complementarios de educación
-            '3340': '3341',     # Promoción cultural
-            '4410': '4411',     # Promoción, mantenimiento y desarrollo del transporte
-        }
-        programme_mapping_2015 = {
-            '3340': '3341',     # Promoción cultural
+            '1690': '1621',     # Otros servicios de bienestar comunitario
+            '2300': '2310',     # Admon. general servicios sociales
+            '2310': '2311',     # Acción Social
+            '2320': '2312',     # Promoción social
+            '2330': '2313',     # Asistencia a personas dependientes
+            '2340': '2412',     # Mujer
+            '2410': '2411',     # Fomento del empleo
+            '3130': '3110',     # Acciones públicas relativas a la salud
         }
 
         # Some dirty lines in input data
@@ -45,8 +42,6 @@ class AlhamaBudgetLoader(SimpleBudgetLoader):
             year = re.search('municipio/(\d+)/', filename).group(1)
             if int(year) < 2015:
                 fc_code = programme_mapping.get(fc_code, fc_code)
-            elif int(year) == 2015:
-                fc_code = programme_mapping_2015.get(fc_code, fc_code)
 
             return {
                 'is_expense': True,
