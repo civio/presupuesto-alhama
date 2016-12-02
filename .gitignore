@@ -1,5 +1,5 @@
 *pyc
 .DS_Store
 /node_modules
-/static/stylesheets/main.css
-/static/stylesheets/main.css.map
+static/stylesheets/main.css
+static/stylesheets/main.css.map
