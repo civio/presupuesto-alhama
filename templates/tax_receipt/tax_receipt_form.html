@@ -1,33 +1,17 @@
 <form class="form-user-incomings" action="#" method="get">
 
-  <div class="row">
-    <div class="form-group"> 
-      <label for="select-family">{{ _('Unidad familiar') }}</label>
-      <select id="select-family" class="form-control">
-        <option value="0" type="text" selected="selected">{{ _('Familia normal') }}</option>
-        <option value="1" type="text">{{ _('Familia numerosa') }}</option>
-        <option value="2" type="text">{{ _('Pensionistas') }}</option>
-      </select>
-    </div>
-  </div>
-
   <h3>{{ _('Impuestos') }}</h3>
 
   <div class="row">
-    <div class="form-group form-group-half-width">
-      <label for="select-house">{{ _('Zona Inmueble') }}</label>
+    <div class="form-group">
+      <label for="select-house">{{ _('Inmueble') }}</label>
       <select id="select-house" class="form-control">
-        <option value="0" type="text" selected="selected">{{ _('Los Cristianos-Las Américas') }}</option>
-        <option value="1" type="text">{{ _('Galletas, Costa Silencio, Fraile, Guaza...') }}</option>
-        <option value="2" type="text">{{ _('Arona, Valle San Lorenzo, Cabo Blanco, Buzanada, Camella..') }}</option>
+        <option value="0" type="text" selected="selected">{{ _('Piso en bloque de viviendas (99 m\u00B2)') }}</option>
+        <option value="1" type="text">{{ _('Duplex de 6 m. lineales de fachada y 3 plantas (221 m\u00B2)') }}</option>
+        <option value="2" type="text">{{ _('Casa en planta baja (97 m\u00B2)') }}</option>
+        <option value="3" type="text">{{ _('Casa de 2 plantas (207 m\u00B2)') }}</option>
+        <option value="4" type="text">{{ _('Chalet individual (248 m\u00B2)') }}</option>
       </select>
-    </div>
-    <div class="form-group form-group-half-width">
-      <label for="select-house-surface">{{ _('Superficie Inmueble') }}</label>
-      <div class="input-group">
-        <input id="select-house-surface" type="number" min="0" step="any" value="100" class="form-control">
-        <div class="input-group-addon">m<sup>2</sup></div>
-      </div>
     </div>
     <div class="select-info">{{ _('IBI') }}: <span id="select-house-tax"></span></div>
   </div>
@@ -37,10 +21,10 @@
       <label for="select-vehicle">{{ _('Vehículo') }}</label>
       <select id="select-vehicle" class="form-control">
         <option value="0" type="text" selected="selected">{{ _('Ninguno') }}</option>
-        <option value="1" type="text">{{ _('Coche muy pequeño (menos de 8 caballos fiscales)') }}</option>
-        <option value="2" type="text">{{ _('Coche pequeño (entre 8 y 12 caballos fiscales)') }}</option>
-        <option value="3" type="text">{{ _('Coche mediano (entre 12 y 20 caballos fiscales)') }}</option>
-        <option value="4" type="text">{{ _('Coche muy grande (más de 20 caballos fiscales)') }}</option>
+        <option value="1" type="text">{{ _('Ciclomotor o motocicleta (hasta 125 cc.)') }}</option>
+        <option value="2" type="text">{{ _('Turismo (entre 8 y 11,99 caballos fiscales)') }}</option>
+        <option value="3" type="text">{{ _('Turismo (entre 12 y 15,99 caballos fiscales)') }}</option>
+        <option value="4" type="text">{{ _('Vehículo mixto (furgoneta o todo terreno) hasta 1.000 Kg de carga útil') }}</option>
       </select>
     </div>
     <div class="select-info">{{ _('Impuesto a vehículos motorizados') }}: <span id="select-vehicle-tax"></span></div>
@@ -51,10 +35,10 @@
       <label for="select-extra-vehicle">{{ _('Vehículo adicional') }}</label>
       <select id="select-extra-vehicle" class="form-control">
         <option value="0" type="text" selected="selected">{{ _('Ninguno') }}</option>
-        <option value="1" type="text">{{ _('Coche muy pequeño (menos de 8 caballos fiscales)') }}</option>
-        <option value="2" type="text">{{ _('Coche pequeño (entre 8 y 12 caballos fiscales)') }}</option>
-        <option value="3" type="text">{{ _('Coche mediano (entre 12 y 20 caballos fiscales)') }}</option>
-        <option value="4" type="text">{{ _('Coche muy grande (más de 20 caballos fiscales)') }}</option>
+        <option value="1" type="text">{{ _('Ciclomotor o motocicleta (hasta 125 cc.)') }}</option>
+        <option value="2" type="text">{{ _('Turismo (entre 8 y 11,99 caballos fiscales)') }}</option>
+        <option value="3" type="text">{{ _('Turismo (entre 12 y 15,99 caballos fiscales)') }}</option>
+        <option value="4" type="text">{{ _('Vehículo mixto (furgoneta o todo terreno) hasta 1.000 Kg de carga útil') }}</option>
       </select>
     </div>
     <div class="select-info">{{ _('Impuesto a vehículos motorizados') }}: <span id="select-extra-vehicle-tax"></span></div>
@@ -65,13 +49,14 @@
 
   <div class="row">
     <div class="form-group"> 
-      <label for="select-garbage">{{ _('Tipo de inmueble') }}</label>
+      <label for="select-garbage">{{ _('Bonificación tasa de recogida de residuos') }}</label>
       <select id="select-garbage" class="form-control">
-        <option value="0" type="text" selected="selected">{{ _('Vivienda') }}</option>
-        <option value="1" type="text">{{ _('Estudio') }}</option>
+        <option value="0" type="text" selected="selected">{{ _('Ninguna') }}</option>
+        <option value="1" type="text">{{ _('Vivienda habitual de jubilados o pensionistas mayores de 65 años') }}</option>
+        <option value="2" type="text">{{ _('Vivienda habitual personas menores de 65 años, con ingresos inferiores a 1,25 veces la renta del IPREM') }}</option>
       </select>
     </div>
-    <div class="select-info">{{ _('Tasa de basuras') }}: <span id="select-garbage-tax"></span></div>
+    <div class="select-info">{{ _('Tasa de recogida de residuos') }}: <span id="select-garbage-tax"></span></div>
   </div>
 
   <div class="row">
@@ -79,7 +64,9 @@
       <label for="select-parking">{{ _('¿Tienes un vado?') }}</label>
       <select id="select-parking" class="form-control">
         <option value="0" type="text" selected="selected">{{ _('No') }}</option>
-        <option value="1" type="text">{{ _('Sí') }}</option>
+        <option value="1" type="text">{{ _('Sí, una entrada de vehículos en cochera de una sola plaza') }}</option>
+        <option value="2" type="text">{{ _('Sí, una entrada de vehículos en cochera de dos plazas') }}</option>
+        <option value="3" type="text">{{ _('Sí, una entrada de vehículos en cochera de tres plazas') }}</option>
       </select>
     </div>
     <div class="select-info">{{ _('Tasa') }}: <span id="select-parking-tax"></span></div>
@@ -87,4 +74,4 @@
 
 </form>
 
-<p id="tax-amount">{{ _('Contribuyes con un total de <b id="tax-amount-paid"></b> a los presupuestos del Gobierno de Aragón')|safe }}.</p>
+<p id="tax-amount">{{ _('Contribuyes con un total de <strong id="tax-amount-paid"></strong> a los presupuestos del Gobierno de Aragón')|safe }}.</p>
