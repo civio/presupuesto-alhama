@@ -130,6 +130,13 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
+// Payments
+#payments-search .btn-primary{
+  border-color: $brand-primary;
+  background-color: $brand-primary;
+}
+
+
 @media (min-width: $screen-sm-min) {
   .navbar-brand{
     margin-top: 0;
