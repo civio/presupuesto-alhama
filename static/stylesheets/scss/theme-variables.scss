@@ -17,7 +17,6 @@ $brand-terciary:        #f5aa00;
 $brand-primary-accent:  $brand-terciary;
 
 $text-color:            #333;
-$table-color:           $brand-primary;
 
 $headings-color:        $brand-primary;
 
@@ -92,6 +91,13 @@ $navbar-default-link-active-bg:       $brand-secondary;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:               992px;  //$screen-md-min;
+
+
+// Panels
+// ---------------
+
+$panel-default-border:      $brand-primary;
+$panel-default-heading-bg:  $brand-primary;
 
 
 // Popover
@@ -178,12 +184,6 @@ $budget-stream-color: $brand-primary;
 
 $slider-bg:     $brand-secondary;
 $slider-color:  $brand-primary;
-
-
-// Data Panel
-// --------------
-
-$data-panel-color: $brand-primary;
 
 
 // Data Sources
