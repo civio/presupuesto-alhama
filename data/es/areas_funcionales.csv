@@ -76,13 +76,14 @@
 4,2,2,0,Industria
 4,3,1,0,Comercio
 4,3,2,0,Ordenación y promoción turística
+4,4,1,0,"Promoción, mantenimiento y desarrollo del transporte"
 4,5,0,0,Administración general de infraestructuras
 4,5,4,0,Caminos vecinales
 4,5,9,0,Otras infraestructuras
 4,9,1,0,Sociedad de la información
 4,9,3,0,Oficinas de defensa al consumidor
 9,1,2,0,Órganos de gobierno
-9,2,0,0,Administración general 
+9,2,0,0,Administración general
 9,3,1,0,Política económica y fiscal
 9,3,2,0,Gestión del sistema tributario
 9,4,1,0,Transferencias a Comunidades Autónomas
