@@ -13,6 +13,9 @@ class AlhamaPaymentsLoader(PaymentsLoader):
         # But what we want as area is the policy description
         policy = Budget.objects.get_all_descriptions(budget.entity)['functional'][policy_id]
 
+        payee = self._titlecase(line[12].strip())
+        payee = ("Otros" if payee == "" else payee)
+
         return {
             'area': policy,
             'programme': None,
@@ -20,7 +23,7 @@ class AlhamaPaymentsLoader(PaymentsLoader):
             'ec_code': None,
             'date': line[0].strip(),
             'contract_type': None,
-            'payee': self._titlecase(line[12].strip()),
+            'payee': payee,
             'anonymized': False,
             'description': line[14].strip(),
             'amount': self._read_english_number(line[2])
