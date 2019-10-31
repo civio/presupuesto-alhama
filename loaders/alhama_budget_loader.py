@@ -26,22 +26,18 @@ class AlhamaBudgetLoader(SimpleBudgetLoader):
             '3130': '3110',  # Acciones públicas relativas a la salud
         }
 
-        # Some dirty lines in input data
-        if line[0] == '':
-            return None
-
         is_expense = filename.find('gastos.csv') != -1
         is_actual = filename.find('/ejecucion_') != -1
 
         if is_expense:
             # We got 3- or 4- digit functional codes as input, so add a trailing zero
-            fc_code = line[1].ljust(4, '0')
-            ec_code = line[2][:-2]  # First three digits (everything but last two)
+            fc_code = line[4].ljust(4, '0')
+            ec_code = line[5][:-2]  # First three digits (everything but last two)
             ic_code = '000'  # All expense goes to the root node
-            item_number = line[2][-2:]  # Last two digits
-            description = line[3]
-            amount_budgeted = line[4]
-            amount_actual = line[6]
+            item_number = line[5][-2:]  # Last two digits
+            description = line[7]
+            amount_budgeted = line[8]
+            amount_actual = line[12]
 
             # For years before 2015 we check whether we need to amend the programme code
             year = re.search(r'municipio/(\d+)/', filename).group(1)
