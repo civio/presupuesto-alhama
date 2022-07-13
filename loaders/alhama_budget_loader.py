@@ -35,7 +35,7 @@ class AlhamaBudgetLoader(SimpleBudgetLoader):
             ec_code = line[5][:-2]  # First three digits (everything but last two)
             ic_code = '000'  # All expense goes to the root node
             item_number = line[5][-2:]  # Last two digits
-            description = line[7]
+            description = line[7].decode("utf8")
             amount_budgeted = line[8]
             amount_actual = line[12]
 
@@ -49,7 +49,7 @@ class AlhamaBudgetLoader(SimpleBudgetLoader):
             ec_code = line[5][:-2]  # First three digits
             ic_code = '000'  # All income goes to the root node
             item_number = line[5][-2:]  # Fourth and fifth digit; careful, there's trailing dirt
-            description = line[7]
+            description = line[7].decode("utf8")
             amount_budgeted = line[8]
             amount_actual = line[19]
 
