@@ -84,9 +84,8 @@ LANGUAGES = (
   # ('gl', 'Galego'),
 )
 
-# Google Analytics ID. Default: ''
-# In order to get the ID create a Google Analytics Acount in https://analytics.google.com/analytics/web/
-ANALYTICS_ID            = 'UA-28946840-18'
+# Plausible data domain. Default: ''
+PLAUSIBLE_DOMAIN        = 'alhama.dondevanmisimpuestos.es'
 
 # Setup Data Source Budget link
 DATA_SOURCE_BUDGET      = 'http://www.alhamademurcia.es/presupuestos.asp'
