@@ -1,7 +1,4 @@
 # -*- coding: UTF-8 -*-
-from django.conf.urls import patterns, url
-#from django.conf.urls.i18n import i18n_patterns
-
 
 MAIN_ENTITY_LEVEL = 'municipio'
 
@@ -21,11 +18,11 @@ PAYMENTS_LOADER = 'AlhamaPaymentsLoader'
 # Show Payments section in menu & home options. Default: False.
 SHOW_PAYMENTS = True
 
-# Configure 'by area' payment breakdown. Default: ['area', 'payee', 'description']
-# PAYMENTS_BREAKDOWN_BY_AREA = ['area', 'payee', 'description']
+# Configure 'by area' payment breakdown. Default: ['area', 'payee', 'description']
+# PAYMENTS_BREAKDOWN_BY_AREA = ['area', 'payee', 'description']
 
-# Configure 'by payee' payment breakdown. Default: ['payee', 'area', 'description']
-# PAYMENTS_BREAKDOWN_BY_PAYEE = ['payee', 'area', 'description']
+# Configure 'by payee' payment breakdown. Default: ['payee', 'area', 'description']
+# PAYMENTS_BREAKDOWN_BY_PAYEE = ['payee', 'area', 'description']
 
 # Show Tax Receipt section in menu & home options. Default: False.
 SHOW_TAX_RECEIPT = True
@@ -108,12 +105,6 @@ MAIN_ENTITY_WEB_URL     = 'http://www.alhamademurcia.es/'
 # External URL for Cookies Policy (if empty we use out template page/cookies.html)
 COOKIES_URL             = 'http://www.alhamademurcia.es/politica-cookies.asp'
 
-# We can define additional URLs applicable only to the theme. These will get added
-# to the project URL patterns list.
-# EXTRA_URLS = i18n_patterns('presupuesto-base.views',
-#     url(r'^visita-guiada$', 'guidedvisit'),
-# )
-
 
 # Welcome Settings
 # ----------------------
@@ -174,10 +165,10 @@ OVERVIEW_EXPENSE_NODES = ['92', '13', '16', '22', '33', '17', '34', '32', '15']
 # ----------------------
 
 # Treemaps minimum height or width to show labels. Default: 70 (Optional)
-# TREEMAP_LABELS_MIN_SIZE = 70
+# TREEMAP_LABELS_MIN_SIZE = 70
 
 # Allow overriding of default treemap color scheme
-# COLOR_SCALE = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf']
+# COLOR_SCALE = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf']
 
 # How many levels to show in the global institutional treemap? Default: 1.
-# INSTITUTIONAL_MAX_LEVELS = 2
+# INSTITUTIONAL_MAX_LEVELS = 2
