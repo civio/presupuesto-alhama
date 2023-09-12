@@ -85,16 +85,16 @@ LANGUAGES = (
 PLAUSIBLE_DOMAIN        = 'alhama.dondevanmisimpuestos.es'
 
 # Setup Data Source Budget link
-DATA_SOURCE_BUDGET      = 'http://www.alhamademurcia.es/presupuestos.asp'
+DATA_SOURCE_BUDGET      = 'https://www.alhamademurcia.es/presupuestos.asp'
 
 # Setup Data Source Population link
-DATA_SOURCE_POPULATION  = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2883&L=0'
+DATA_SOURCE_POPULATION  = 'https://www.ine.es/jaxiT3/Tabla.htm?t=2883&L=0'
 
 # Setup Data Source Inflation link
-DATA_SOURCE_INFLATION   = 'http://www.ine.es/jaxiT3/Tabla.htm?t=10019&L=0'
+DATA_SOURCE_INFLATION   = 'https://www.ine.es/jaxiT3/Tabla.htm?t=10019&L=0'
 
 # Setup Main Entity Web Url
-MAIN_ENTITY_WEB_URL     = 'http://www.alhamademurcia.es/'
+MAIN_ENTITY_WEB_URL     = 'https://www.alhamademurcia.es/'
 
 # Setup Main Entity Legal Url (if empty we hide the link)
 # MAIN_ENTITY_LEGAL_URL   = ''
@@ -103,7 +103,7 @@ MAIN_ENTITY_WEB_URL     = 'http://www.alhamademurcia.es/'
 # MAIN_ENTITY_PRIVACY_URL = ''
 
 # External URL for Cookies Policy (if empty we use out template page/cookies.html)
-COOKIES_URL             = 'http://www.alhamademurcia.es/politica-cookies.asp'
+COOKIES_URL             = 'https://www.alhamademurcia.es/politica-cookies.asp'
 
 
 # Welcome Settings
